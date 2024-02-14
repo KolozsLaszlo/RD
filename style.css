@@ -28,3 +28,13 @@ nav a {
 nav a:hover {
   background-color: grey;
 }
+
+@media screen and (max-width: 600px) {
+  nav a {
+    font-size: 22px;
+  }
+  nav {
+    flex-direction: column;
+    height: auto;
+  }
+}
