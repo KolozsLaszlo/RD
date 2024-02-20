@@ -1,16 +1,23 @@
+:root {
+  --menu-display: flex;
+}
+
 body {
   margin: 0;
   padding-top: 60px;
 }
 
+#menu {
+  display: none;
+}
+
 nav {
-  background-color: black;
-  padding: 5px 0;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
   height: 60px;
-  display: flex;
+  display: var(--menu-display);
   align-items: center;
   justify-content: center;
-  text-align: center;
   position: fixed;
   top: 0;
   width: 100%;
@@ -29,7 +36,17 @@ nav a:hover {
   background-color: grey;
 }
 
+#menulabel {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  font-size: 20px;
+}
+
 @media screen and (max-width: 600px) {
+  :root {
+    --menu-display: none;
+  }
   nav a {
     font-size: 22px;
   }
@@ -42,4 +59,16 @@ nav a:hover {
   body {
     padding-top: 0px;
   }
+  #menulabel {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    bottom: 91px;
+    top: auto;
+    background-color: white;
+  }
+}
+
+body:has(#menu:checked) {
+  --menu-display: flex;
 }
