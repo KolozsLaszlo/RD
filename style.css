@@ -5,7 +5,7 @@
 body {
   margin: 0;
   padding-top: 60px;
-  background-color: rgb(0, 0, 0);
+  background-color: #070f2b;
 }
 
 #menu,
@@ -14,15 +14,15 @@ body {
 }
 
 h1 {
-  color: white;
+  color: #9290c3;
 }
 
 p {
-  color: white;
+  color: #9290c3;
 }
 
 nav {
-  background-color: rgb(59, 59, 59);
+  background-color: #1b1a55;
   text-align: center;
   /* A menü fix magasságának beállítása */
   height: 60px;
@@ -75,7 +75,7 @@ nav a:hover {
     bottom: 0;
     display: flex;
     width: 100%;
-    background-color: rgb(78, 77, 77);
+    background-color: #535c91;
     color: #fff;
     font-size: 30px;
     height: 40px;
