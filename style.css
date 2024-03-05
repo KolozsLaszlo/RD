@@ -1,9 +1,5 @@
-:root {
-  --menu-display: flex;
-}
-
 body {
-  margin: 0;
+  /* margin: 0; */
   padding-top: 60px;
   background-color: #070f2b;
 }
@@ -27,13 +23,15 @@ nav {
   /* A menü fix magasságának beállítása */
   height: 60px;
   /* flex display, a könnyebb kezelhetőségért, irány és vertikális középre igazítás*/
-  display: var(--menu-display);
-  align-items: center;
+  display: flex;
+  align-content: center;
   justify-content: center;
   /* A menü a helyén marad */
   position: fixed;
   top: 0;
   width: 100%;
+  left: 0;
+  line-height: 50px;
 }
 
 nav a {
@@ -43,10 +41,18 @@ nav a {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   letter-spacing: 1px;
   padding: 2px 10px;
+  display: block;
+  height: 100%;
 }
 
 nav a:hover {
-  background-color: grey;
+  background-color: #070f2b;
+  font-size: 27px;
+  transition: 0.3s ease;
+}
+
+nav a:first-of-type {
+  background-color: #070f2b;
 }
 
 #menulabel {
@@ -59,6 +65,10 @@ nav a:hover {
   }
   nav a {
     font-size: 22px;
+    width: 100%;
+  }
+  nav a:hover {
+    font-size: 23px;
   }
   nav {
     flex-direction: column;
@@ -66,6 +76,7 @@ nav a:hover {
     bottom: var(--bottom-menu-button);
     top: auto;
     transition: bottom 0.4s ease;
+    line-height: 25px;
   }
   body {
     padding-top: 0px;
@@ -82,6 +93,7 @@ nav a:hover {
     height: 40px;
     align-items: center;
     justify-content: center;
+    left: 0;
   }
 }
 
