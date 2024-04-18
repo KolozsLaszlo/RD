@@ -17,6 +17,24 @@ p {
   color: #9290c3;
 }
 
+.kepMeret {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+}
+
+#container {
+  display: flex;
+}
+
+a {
+  color: #9290c3;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 nav {
   background-color: #1b1a55;
   text-align: center;
