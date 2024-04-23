@@ -27,6 +27,7 @@ p {
 #container {
   display: flex;
   align-items: center;
+  color: #9290c3;
 }
 
 a {

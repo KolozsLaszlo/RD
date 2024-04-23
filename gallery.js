@@ -6,3 +6,5 @@ let ujDiv = document.createElement('div')
 console.log(ujDiv)
 ujDiv.innerText = 'HELLO WORLD'
 container.appendChild(ujDiv)
+
+tomb[('alma', 'körte', 'kutya', 'macska')]
