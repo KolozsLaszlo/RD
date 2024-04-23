@@ -1,10 +1,17 @@
 console.log('HELLO WORLD')
 
 let container = document.querySelector('#container')
+// console.log(ujDiv)
 
 let ujDiv = document.createElement('div')
-console.log(ujDiv)
 ujDiv.innerText = 'HELLO WORLD'
 container.appendChild(ujDiv)
 
-tomb[('alma', 'körte', 'kutya', 'macska')]
+let tomb = ['alma', 'körte', 'kutya', 'macska']
+
+for (let elem of tomb) {
+  console.log(elem)
+  let tempDiv = document.createElement('div')
+  tempDiv.innerHTML = elem
+  container.appendChild(tempDiv)
+}

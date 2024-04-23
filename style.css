@@ -30,6 +30,9 @@ p {
   color: #9290c3;
 }
 
+#container div {
+  padding: 5px;
+}
 a {
   color: #9290c3;
   text-decoration: none;
