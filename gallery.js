@@ -1,17 +1,13 @@
 console.log('HELLO WORLD')
 
 let container = document.querySelector('#container')
-// console.log(ujDiv)
 
-let ujDiv = document.createElement('div')
-ujDiv.innerText = 'HELLO WORLD'
-container.appendChild(ujDiv)
+let kepek = ['delfin.png', 'kutya.webp', 'macska.jpg']
 
-let tomb = ['alma', 'körte', 'kutya', 'macska']
-
-for (let elem of tomb) {
-  console.log(elem)
-  let tempDiv = document.createElement('div')
-  tempDiv.innerHTML = elem
-  container.appendChild(tempDiv)
+for (let kep of kepek) {
+  const img = document.createElement('img')
+  img.src = 'img/' + kep
+  img.width = '200'
+  container.appendChild(img)
+  console.log(img)
 }
