@@ -34,6 +34,16 @@ p {
   padding: 5px;
 }
 
+#bigImageDiv {
+  border: 1px solid white;
+  width: 400px;
+  height: 400px;
+}
+
+#bigImageDiv img {
+  width: 100%;
+}
+
 a {
   color: #9290c3;
   text-decoration: none;
