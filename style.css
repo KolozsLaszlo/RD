@@ -34,14 +34,23 @@ p {
   padding: 5px;
 }
 
+#container img {
+  cursor: pointer;
+}
+
 #bigImageDiv {
   border: 1px solid white;
-  width: 400px;
-  height: 400px;
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top:5%;
+  left:5%;
+  visibility: hidden;
 }
 
 #bigImageDiv img {
   width: 100%;
+  cursor: pointer;
 }
 
 a {
